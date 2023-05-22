@@ -13,17 +13,17 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Home Page</title>
+    <title>Skills Page</title>
   </head>
-  <body>
+  <body class="show-nav">
     <nav>
       <div class="logo">
         <img src="./img/profile github2.jpg" alt="user" />
       </div>
       <ul>
-        <li><a href=".">Home</a></li>
+        <li><a href="./index.html">Home</a></li>
         <li><a href="./skills.html">Skills</a></li>
-        <li><a href="./certs.html">Certifications</a></li>
+        <li><a href="#">Certifications</a></li>
         <li><a href="mailto:rheinheimers@protonmail.com">Contact Me</a></li>
       </ul>
     </nav>
@@ -36,55 +36,33 @@
       <h1>
         <img src="./img/MR ICON.png" alt="" class="icon" /> Mark Rheinheimer
       </h1>
-
-      <p>
-        Welcome to my Portfolio!!<br />
-        Have a look around , and don't forget to sign the guest book.
-      </p>
-
-      <button class="cta-btn" id="open">Guest Book</button>
     </header>
 
-    <div class="container">
-      <h2>My Professional Journey</h2>
-      <p>
-        I have spent most of my career in construction and have operated my own
-        home improvement company for the past 15 years. I have a deep love for
-        making things come to life using my hands. I recently finished the
-        design, building, and project management of my own home.
-      </p>
-      <p>
-        This has always left me wanting for more. I have found that in
-        programming, there is nothing quite like typing in commands and watching
-        it come to life on the screen. I love learning all things tech.
-      </p>
-      <h2>A Little Bit About Myself</h2>
-      <p>
-        I am intensively learning all things tech. I have focussed primarily on
-        Javascript but I am picking up some HTML and CSS skills along the way. I
-        have obtained a few certificates in Javascript fundamentals as well as
-        building out projects in multiple Udemy courses.
-      </p>
-
-      <h2>My Favorite Projects</h2>
-      <p>
-        These are projects that I have coded during my course work. I am
-        actively working on other projects that will be uploaded after
-        completion. Feel free to access them through the link, or see the entire
-        list through the portfolio tab in the options menu.
-      </p>
-
+    <div class="container certs-ctn">
+      <h2>Certifications</h2>
       <ul>
-        <li>Forkify App</li>
-        <li><a href="./pig-game/index.html">Pig Game</a>(Dice Game)</li>
-        <li>Bankist App</li>
-        <li>Mapty</li>
-        <li>Video Player</li>
-        <li>Expense Tracker</li>
-        <li>Movie Seat Booking</li>
-        <li>Relaxer</li>
-        <li>Breakout Game</li>
-        <li>Speech Text Reader</li>
+        <li>
+          <a
+            href=" https://freecodecamp.org/certification/fcc501f24cd-9c8f-4790-b1c1-7b653404af27/javascript-algorithms-and-data-structures"
+          >
+            Free Code Camp - Javascript Algorithms and Data Structures</a
+          >
+        </li>
+        <br />
+        <li>
+          <a
+            href="https://udemy-certificate.s3.amazonaws.com/image/UC-f2efeb0b-b5bd-4cfc-8da0-f602c390aaae.jpg?v=1683138245000"
+            >Udemy - The Complete JavaScript Course 2023: From Zero to
+            Expert!</a
+          >
+        </li>
+        <br />
+        <li>
+          <a
+            href="https://udemy-certificate.s3.amazonaws.com/image/UC-31b68ba1-e00d-45ae-916f-181baee01ce2.jpg?v=1684720113000"
+            >Udemy - 20 Web Projects With Vanilla Javascript</a
+          >
+        </li>
       </ul>
     </div>
 
@@ -95,9 +73,10 @@
           <i class="fa fa-times"></i>
         </button>
         <div class="modal-header">
-          <h3>Let me know that you visited...</h3>
+          <h3>Sign up</h3>
         </div>
         <div class="modal-content">
+          <p>Let me know that you visited...</p>
           <form class="modal-form">
             <div>
               <label for="name">Name</label>

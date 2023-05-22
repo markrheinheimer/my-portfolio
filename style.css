@@ -2,8 +2,9 @@
 
 :root {
   --modal-duration: 1s;
-  --primary-color: #30336b;
-  --secondary-color: #be2edd;
+  --primary-color: #24253a;
+  --primary-color1: #555774;
+  --secondary-color: #6c6e5d;
 }
 
 * {
@@ -21,15 +22,32 @@ body.show-nav {
   transform: translateX(200px);
 }
 
+img {
+  margin-top: 30px;
+  height: 50px;
+  width: 50px;
+}
+
+.icon {
+  position: relative;
+  justify-content: left;
+  top: 10px;
+  border-radius: 7px;
+}
+
 nav {
-  background-color: var(--primary-color);
+  background: linear-gradient(
+    to bottom right,
+    var(--primary-color),
+    var(--primary-color1)
+  );
   border-right: 2px solid rgba(200, 200, 200, 0.1);
   color: #fff;
   position: fixed;
   top: 0;
   left: 0;
   width: 200px;
-  height: 100 vh;
+  height: 100vh;
   z-index: 100;
   transform: translateX(-100%);
 }
@@ -40,8 +58,8 @@ nav .logo {
 }
 
 nav .logo img {
-  height: 75px;
-  width: 75px;
+  height: 120px;
+  width: 100px;
   border-radius: 50%;
 }
 
@@ -70,11 +88,15 @@ nav ul li a:hover {
 }
 
 header {
-  background-color: var(--primary-color);
+  background: linear-gradient(
+    to bottom right,
+    var(--primary-color),
+    var(--primary-color1)
+  );
   color: #fff;
   font-size: 130%;
   position: relative;
-  padding: 40px 15px;
+  padding: 30px 15px;
   text-align: center;
 }
 
@@ -108,8 +130,16 @@ button:focus {
 }
 
 .cta-btn {
-  padding: 12px 30px;
-  font-size: 20px;
+  padding: 10px 25px;
+  font-size: 17px;
+}
+
+.cta-btn:hover {
+  background-color: #5c5e50;
+}
+
+.cta-btn:click {
+  scale: (0.95);
 }
 
 .container {
@@ -183,6 +213,20 @@ button:focus {
   position: absolute;
   top: 0;
   right: 0;
+}
+
+.skills-ctn {
+  position: relative;
+  justify-content: center;
+  font-size: 22px;
+}
+
+.certs-ctn {
+  font-size: 24px;
+}
+
+.submit-btn:hover {
+  background-color: #5c5e50;
 }
 
 @keyframes modalopen {
