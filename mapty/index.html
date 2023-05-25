@@ -12,16 +12,17 @@
     />
 
     <link rel="stylesheet" href="style.css" />
+
     <link
       rel="stylesheet"
-      href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
-      integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+      href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+      integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
       crossorigin=""
     />
     <script
       defer
-      src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
-      integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+      src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+      integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
       crossorigin=""
     ></script>
 
@@ -44,7 +45,10 @@
           </div>
           <div class="form__row">
             <label class="form__label">Distance</label>
-            <input class="form__input form__input--distance" placeholder="km" />
+            <input
+              class="form__input form__input--distance"
+              placeholder="miles"
+            />
           </div>
           <div class="form__row">
             <label class="form__label">Duration</label>
@@ -53,6 +57,7 @@
               placeholder="min"
             />
           </div>
+
           <div class="form__row">
             <label class="form__label">Cadence</label>
             <input
@@ -64,7 +69,7 @@
             <label class="form__label">Elev Gain</label>
             <input
               class="form__input form__input--elevation"
-              placeholder="meters"
+              placeholder="feet"
             />
           </div>
           <button class="form__btn">OK</button>

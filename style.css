@@ -22,17 +22,14 @@ body.show-nav {
   transform: translateX(200px);
 }
 
-img {
-  margin-top: 30px;
-  height: 50px;
-  width: 50px;
-}
-
 .icon {
   position: relative;
   justify-content: left;
-  top: 10px;
-  border-radius: 5px;
+  top: 35px;
+  left: 25px;
+  border-radius: 0 25px 0 25px;
+  height: 75px;
+  width: 75px;
 }
 
 nav {
@@ -87,6 +84,10 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
+div ul li a:hover {
+  background-color: rgb(255, 255, 190);
+}
+
 header {
   background: linear-gradient(
     to bottom right,
@@ -96,11 +97,11 @@ header {
   color: #fff;
   font-size: 130%;
   position: relative;
-  padding: 30px 15px;
+  padding: 40px 15px;
   text-align: center;
 }
 
-header h1 {
+h1 {
   margin: 0;
 }
 
@@ -231,6 +232,72 @@ button:focus {
 
 .submit-btn:hover {
   background-color: #5c5e50;
+}
+
+.container .project-container {
+  display: grid;
+  grid-template-columns: 150px 150px 150px;
+  width: 1000px;
+  justify-content: left;
+}
+
+img {
+  margin: 15px;
+  padding: 15px;
+}
+
+p {
+  text-align: center;
+}
+
+.project-img {
+  border: 1px solid;
+  width: 800px;
+  display: flex;
+  flex-direction: row;
+  margin: 15px;
+  padding: 15px;
+  justify-content: center;
+  text-align: center;
+}
+
+.project-img1 {
+  border: 1px solid;
+  width: 800px;
+  /* position: absolute; */
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  flex-direction: row;
+  margin: 15px;
+  padding: 15px;
+  justify-content: left;
+}
+
+.project-img img:hover {
+  cursor: pointer;
+}
+
+.project-img1 img:hover {
+  cursor: pointer;
+}
+
+.project-img img {
+  height: 150px;
+  width: 150px;
+}
+
+.project-img1 img {
+  height: 200px;
+  width: 200px;
+}
+
+h3 {
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  text-align: center;
 }
 
 @keyframes modalopen {

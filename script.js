@@ -4,12 +4,6 @@ const open = document.getElementById('open');
 const modal = document.getElementById('modal');
 const submit = document.getElementById('submit');
 
-function storeResult(e) {
-  console.log(e);
-  e.preventdefault();
-  console.log(e);
-}
-
 // Toggle nav
 toggle.addEventListener('click', () =>
   document.body.classList.toggle('show-nav')
@@ -26,4 +20,7 @@ window.addEventListener('click', (e) =>
   e.target === modal ? modal.classList.remove('show-modal') : false
 );
 
-submit.addEventListener('click', console.log(this));
+submit.addEventListener('click', () => {
+  e.preventdefault();
+  console.log('hello');
+});
