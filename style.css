@@ -97,7 +97,7 @@ header {
   color: #fff;
   font-size: 130%;
   position: relative;
-  padding: 40px 15px;
+  padding: 30px 15px;
   text-align: center;
 }
 
@@ -251,7 +251,7 @@ p {
 }
 
 .project-img {
-  border: 1px solid;
+  border: 0;
   width: 800px;
   display: flex;
   flex-direction: row;
@@ -262,7 +262,7 @@ p {
 }
 
 .project-img1 {
-  border: 1px solid;
+  border: 0;
   width: 800px;
   /* position: absolute; */
   display: grid;
