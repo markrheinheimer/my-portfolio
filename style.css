@@ -236,6 +236,7 @@ button:focus {
 
 .container .project-container {
   display: grid;
+  align-items: center;
   grid-template-columns: 150px 150px 150px;
   width: 1000px;
   justify-content: left;
