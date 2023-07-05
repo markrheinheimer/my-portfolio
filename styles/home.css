@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', 'Arial';
+  margin: 0;
+  background-color: rgb(244, 244, 244);
+  transition: transform 0.3s ease;
+}
+
+nav {
+  background: linear-gradient(
+    to bottom right,
+    var(--primary-color),
+    var(--primary-color1)
+  );
+  border-right: 2px solid rgba(200, 200, 200, 0.1);
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100vh;
+  z-index: 100;
+  transform: translateX(-100%);
+}
+
+nav ul {
+  padding: 0;
+  list-style-type: none;
+  margin: 0;
+}
+
+nav ul li {
+  border-bottom: 2px solid rgba(200, 200, 200, 0.1);
+  padding: 20px;
+}
+
+nav ul li:first-of-type {
+  border-top: 2px solid rgba(200, 200, 200, 0.1);
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.show-nav {
+  transform: translateX(200px);
+}
+
+.profile-pic-ctn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.profile-pic {
+  height: 165px;
+  width: 140px;
+  border-radius: 50%;
+}
+
+.mr-icon {
+  top: 35px;
+  left: 25px;
+  border-radius: 0 25px 0 25px;
+  height: 50px;
+  width: 50px;
+  margin-right: 10px;
+}
+
+.mr-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  font-size: 38px;
+}
