@@ -265,7 +265,6 @@ p {
 .project-img1 {
   border: 0;
   width: 800px;
-  /* position: absolute; */
   display: grid;
   grid-template-columns: 200px 200px 200px;
   flex-direction: row;
