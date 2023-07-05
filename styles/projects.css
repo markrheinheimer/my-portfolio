@@ -1,0 +1,31 @@
+.container .project-container {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 200px 200px;
+  width: 1000px;
+  justify-content: left;
+  opacity: 1;
+  z-index: 1;
+}
+
+.project-img1 {
+  border: 0;
+  width: 600px;
+  display: grid;
+  grid-template-columns: 300px 300px;
+  flex-direction: row;
+  margin: 50px;
+  margin-right: 20px;
+  padding: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-img1 img {
+  height: 250px;
+  width: 250px;
+}
+
+.project-img1 img:hover {
+  cursor: pointer;
+}

@@ -1,0 +1,37 @@
+.certs-heading {
+  font-size: 40px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.certs-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  font-size: 28px;
+  margin-left: 150px;
+}
+
+.certs-container li {
+  margin-bottom: 15px;
+}
+
+.mr-head-certs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 38px;
+}
+
+.certs-container a {
+  color: black;
+  text-decoration: none;
+}
+
+.certs-container a:hover {
+  text-decoration: underline;
+}
