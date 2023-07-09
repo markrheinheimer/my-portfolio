@@ -215,6 +215,8 @@ p {
 .project-img img {
   height: 150px;
   width: 150px;
+  border: 1px solid;
+  border-color: lightgray;
 }
 
 .project-img a {

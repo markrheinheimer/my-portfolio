@@ -12,34 +12,39 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="style.css" />
-    <title>Skills Page</title>
+    <link rel="stylesheet" href="./styles/skills.css" />
+    <link rel="stylesheet" href="./styles/home.css" />
+
+    <title>Skills</title>
   </head>
-  <body class="show-nav">
+  <body>
     <nav>
-      <div class="logo">
-        <img src="./img/profile github2.jpg" alt="user" />
+      <div class="profile-pic-ctn">
+        <img class="profile-pic" src="./img/profile github2.jpg" alt="user" />
       </div>
       <ul>
         <li><a href="./index.html">Home</a></li>
         <li><a href="./certs.html">Certifications</a></li>
-        <li><a href="./projects.html">More Projects</a></li>
+        <li><a href="./projects.html">Projects</a></li>
         <li><a href="./skills.html">Skills</a></li>
-        <li><a href="MarkRheinheimer Resume 5.30.23.pdf">My Resume</a></li>
-        <li><a href="mailto:rheinheimers@protonmail.com">Contact Me</a></li>
+        <li><a href="./resume/MarkRheinheimer Resume 5.30.23.pdf" target="_blank">My Resume</a></li>
+        <li><a href="mailto:rheinheimers@protonmail.com" target="_blank">Contact Me</a></li>
       </ul>
     </nav>
 
-    <header>
+      <header>
       <button id="toggle" class="toggle">
         <i class="fa fa-bars fa-2x"></i>
       </button>
 
-      <h1>
-        <img src="./img/MR ICON.png" alt="" class="icon" /> Mark Rheinheimer
-      </h1>
-    </header>
+      <div class="mr-head-skills">
+        <img src="./img/MR ICON.png" alt="" class="mr-icon" /> Mark Rheinheimer
+      </i>
+      </div>
 
+   
+    </header>
+    
     <div class="container skills-ctn">
       <h2>My Skills</h2>
       <ul>
@@ -77,6 +82,9 @@
         </li>
       </ul>
     </div>
-    <script src="scriptskills.js"></script>
+
+  
+
+    <script src="./js/script.js"></script>
   </body>
 </html>

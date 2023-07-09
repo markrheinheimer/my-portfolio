@@ -1,3 +1,7 @@
+body {
+  overflow: hidden;
+}
+
 .mr-head-project {
   display: flex;
   justify-content: center;
@@ -18,7 +22,6 @@
 .project-img1 {
   display: flex;
   flex-wrap: wrap;
-  width: auto;
   justify-content: center;
   align-items: center;
 }
@@ -45,6 +48,8 @@
   margin-bottom: 10px;
   margin-left: 30px;
   margin-right: 30px;
+  border: 1px solid;
+  border-color: lightgray;
 }
 
 .project-img1 img:hover {
