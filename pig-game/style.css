@@ -197,12 +197,13 @@ main {
   left: 0;
   background: #333;
   color: #fff;
-  min-height: 14vh;
-  width: 400px;
+  min-height: 11vh;
+  width: 320px;
   padding: 15px;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 1.5;
   border-bottom-right-radius: 9px;
+  z-index: 1;
 }
 
 h2 {

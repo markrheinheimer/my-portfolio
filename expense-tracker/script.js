@@ -87,6 +87,8 @@ function updateValues() {
   ).toFixed(2);
 
   balance.innerText = `$${total}`;
+  if (+total >= 0) balance.style.color = '#2ecc71';
+  if (+total < 0) balance.style.color = '#c0392b';
   money_plus.innerText = `$${income}`;
   money_minus.innerText = `$${expense}`;
 }

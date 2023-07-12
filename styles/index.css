@@ -14,8 +14,14 @@
 body {
   font-family: 'Lato', 'Arial';
   margin: 0;
-  background-color: rgb(244, 244, 244);
-  transition: transform 0.3s ease;
+  background: linear-gradient(
+    90deg,
+    rgb(184, 184, 184),
+    rgb(238, 238, 238),
+    rgb(184, 184, 184)
+  );
+  transition: transform 0.6s ease;
+  height: 100vh;
 }
 
 header {
@@ -136,6 +142,9 @@ button:focus {
 }
 
 .cta-btn-guest {
+  position: absolute;
+  top: 125px;
+  right: 30px;
   padding: 10px 25px;
   font-size: 17px;
   margin-bottom: 20px;
@@ -147,16 +156,6 @@ button:focus {
 
 .toggle:hover {
   background-color: rgba(0, 0, 0, 1);
-}
-
-.container-background {
-  background-image: url(./img/code-background1.jpg);
-  background-size: cover;
-  position: absolute;
-  opacity: 0.5;
-  z-index: -1;
-  width: 100%;
-  height: 70%;
 }
 
 .container {
@@ -177,13 +176,14 @@ h2 {
 p {
   text-align: center;
   margin: 3px;
-  font-size: 18px;
+  font-size: 19px;
   line-height: 1.3;
 }
 
 .forkify-container {
   display: flex;
   flex-direction: column;
+  border-radius: 5px;
 }
 
 .speech-container {
@@ -210,6 +210,10 @@ p {
 
 .project-img img:hover {
   cursor: pointer;
+  transform: translateY(-3px);
+  text-decoration: underline;
+  border: 1px solid;
+  border-color: lightgray;
 }
 
 .project-img img {
@@ -217,6 +221,7 @@ p {
   width: 150px;
   border: 1px solid;
   border-color: lightgray;
+  margin: 3px;
 }
 
 .project-img a {
@@ -226,7 +231,5 @@ p {
 }
 
 .project-img a:hover {
-  color: #000000;
   text-decoration: underline;
-  background-color: rgb(255, 253, 230);
 }

@@ -34,11 +34,12 @@ body {
   font-size: 20px;
   text-decoration: none;
   color: black;
+  padding-bottom: 15px;
+  border-radius: 4px;
 }
 
 .project-img1 a:hover {
   text-decoration: underline;
-  background-color: rgb(255, 253, 230);
 }
 
 .project-img1 img {
@@ -53,5 +54,6 @@ body {
 }
 
 .project-img1 img:hover {
+  transform: translateY(-3px);
   cursor: pointer;
 }
