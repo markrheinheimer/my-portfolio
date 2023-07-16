@@ -18,14 +18,14 @@ window.addEventListener('DOMContentLoaded', () => {
 
   setTimeout(() => {
     one.classList.add('move');
-  }, 100);
+  }, 200);
   setTimeout(() => {
     two.classList.add('move');
-  }, 300);
-  setTimeout(() => {
-    three.classList.add('move');
   }, 500);
   setTimeout(() => {
+    three.classList.add('move');
+  }, 800);
+  setTimeout(() => {
     four.classList.add('move');
-  }, 700);
+  }, 1200);
 });

@@ -166,7 +166,7 @@ h2 {
 .skill7 {
   opacity: 0;
   transform: translateY(-1000px);
-  transition: opacity 1.2s, transform 0.7s;
+  transition: opacity 1.6s, transform 0.7s;
 }
 
 .drop {

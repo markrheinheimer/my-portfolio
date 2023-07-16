@@ -14,7 +14,7 @@ toggle.addEventListener('click', () =>
 
 setTimeout(() => {
   skill7.classList.add('drop');
-}, 0);
+}, 100);
 setTimeout(() => {
   skill6.classList.add('drop');
 }, 250);

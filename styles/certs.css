@@ -157,25 +157,25 @@ h2 {
 .one {
   opacity: 0;
   transform: translateX(-600%);
-  transition: opacity 1.5s, transform 1.3s;
+  transition: opacity 1.5s, transform 0.8s;
 }
 
 .two {
   opacity: 0;
   transform: translateX(600%);
-  transition: opacity 1.5s, transform 1.3s;
+  transition: opacity 1.5s, transform 1.1s;
 }
 
 .three {
   opacity: 0;
   transform: translateX(-600%);
-  transition: opacity 1.5s, transform 1.3s;
+  transition: opacity 1.5s, transform 1.5s;
 }
 
 .four {
   opacity: 0;
   transform: translateX(600%);
-  transition: opacity 1.5s, transform 1.3s;
+  transition: opacity 1.5s, transform 1.9s;
 }
 
 .move {

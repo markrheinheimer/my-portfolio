@@ -4,13 +4,9 @@ const modal = document.getElementById('modal');
 const submit = document.getElementById('submit');
 const mrtitle = document.querySelector('.mrtitle');
 const mricon = document.querySelector('.mr-icon');
-
-// Toggle nav
 const toggle = document.getElementById('toggle');
 
-toggle.addEventListener('click', () =>
-  document.body.classList.toggle('show-nav')
-);
+// Toggle nav
 
 // Show modal
 open.addEventListener('click', () => modal.classList.add('show-modal'));
@@ -35,6 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const imageContainer = document.getElementById('image-container');
   const guestButton = document.querySelector('.cta-btn-guest');
   const headerParagraph = document.querySelector('.header-p');
+  const toggle = document.getElementById('toggle');
 
   setTimeout(() => {
     professional.classList.add('move');
@@ -48,9 +45,6 @@ document.addEventListener('DOMContentLoaded', () => {
   setTimeout(() => {
     imageContainer.classList.add('move');
   }, 1400);
-  // setTimeout(() => {
-  //   toggle.classList.add('movenav');
-  // }, 1700);
   setTimeout(() => {
     headerParagraph.classList.add('moveheader');
   }, 200);
@@ -63,4 +57,11 @@ document.addEventListener('DOMContentLoaded', () => {
   setTimeout(() => {
     mricon.classList.add('headmove');
   }, 150);
+  setTimeout(() => {
+    toggle.classList.add('togglemove');
+  }, 2150);
+});
+
+toggle.addEventListener('click', () => {
+  document.body.classList.toggle('show-nav');
 });
