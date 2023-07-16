@@ -1,10 +1,13 @@
-const toggle = document.getElementById('toggle');
 const close = document.getElementById('close');
 const open = document.getElementById('open');
 const modal = document.getElementById('modal');
 const submit = document.getElementById('submit');
+const mrtitle = document.querySelector('.mrtitle');
+const mricon = document.querySelector('.mr-icon');
 
 // Toggle nav
+const toggle = document.getElementById('toggle');
+
 toggle.addEventListener('click', () =>
   document.body.classList.toggle('show-nav')
 );
@@ -31,19 +34,33 @@ document.addEventListener('DOMContentLoaded', () => {
   const favorite = document.getElementById('favorite');
   const imageContainer = document.getElementById('image-container');
   const guestButton = document.querySelector('.cta-btn-guest');
+  const headerParagraph = document.querySelector('.header-p');
 
   setTimeout(() => {
     professional.classList.add('move');
-  }, 100);
+  }, 400);
   setTimeout(() => {
     journey.classList.add('move');
-  }, 300);
+  }, 700);
   setTimeout(() => {
     favorite.classList.add('move');
-  }, 600);
+  }, 900);
   setTimeout(() => {
     imageContainer.classList.add('move');
-  }, 1100);
-
-  guestButton.style.transform = 'scale(1)';
+  }, 1400);
+  // setTimeout(() => {
+  //   toggle.classList.add('movenav');
+  // }, 1700);
+  setTimeout(() => {
+    headerParagraph.classList.add('moveheader');
+  }, 200);
+  setTimeout(() => {
+    guestButton.classList.add('containergrow');
+  }, 2300);
+  setTimeout(() => {
+    mrtitle.classList.add('headmove');
+  }, 150);
+  setTimeout(() => {
+    mricon.classList.add('headmove');
+  }, 150);
 });
