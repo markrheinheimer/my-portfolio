@@ -28,29 +28,30 @@
 }
 
 .one {
-  opacity: 0.1;
-  transform: translateX(50%);
+  opacity: 0;
+  transform: translateX(100%);
+  transition: transform 5s ease, opacity 5s ease;
 }
 
 .two {
-  opacity: 0.1;
-  transform: translateX(-50%);
+  opacity: 0;
+  transform: translateX(-100%);
 }
 
 .three {
-  opacity: 0.1;
-  transform: translateX(50%);
+  opacity: 0;
+  transform: translateX(100%);
 }
 
 .four {
-  opacity: 0.1;
-  transform: translateX(-50%);
+  opacity: 0;
+  transform: translateX(-100%);
 }
 
-/* .show {
+.move {
   opacity: 1;
   transform: translateX(0);
-} */
+}
 
 .mr-head-certs {
   display: flex;

@@ -1,4 +1,8 @@
-const toggle1 = document.getElementById('toggle1');
+const toggle = document.getElementById('toggle');
+const close = document.getElementById('close');
+const open = document.getElementById('open');
+const modal = document.getElementById('modal');
+const submit = document.getElementById('submit');
 
 // Toggle nav
 toggle.addEventListener('click', () =>
@@ -13,15 +17,15 @@ window.addEventListener('DOMContentLoaded', () => {
   console.log('hi');
 
   setTimeout(() => {
-    one.classList.add = 'show';
-  }, 200);
+    one.classList.add('move');
+  }, 100);
   setTimeout(() => {
-    two.style.transform = 'translateX(0)';
-  }, 200);
+    two.classList.add('move');
+  }, 300);
   setTimeout(() => {
-    three.style.transform = 'translateX(0)';
-  }, 200);
+    three.classList.add('move');
+  }, 500);
   setTimeout(() => {
-    four.style.transform = 'translateX(0)';
-  }, 200);
+    four.classList.add('move');
+  }, 700);
 });
