@@ -51,6 +51,7 @@ body {
   margin-right: 70px;
   border: 1px solid;
   border-color: lightgray;
+  transition: transform 0.3s ease;
 }
 
 .project-img1 img:hover {

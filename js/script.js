@@ -24,3 +24,26 @@ submit.addEventListener('click', () => {
   e.preventdefault();
   console.log('hello');
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const professional = document.getElementById('professional');
+  const journey = document.getElementById('journey');
+  const favorite = document.getElementById('favorite');
+  const imageContainer = document.getElementById('image-container');
+  const guestButton = document.querySelector('.cta-btn-guest');
+
+  setTimeout(() => {
+    professional.classList.add('move');
+  }, 100);
+  setTimeout(() => {
+    journey.classList.add('move');
+  }, 300);
+  setTimeout(() => {
+    favorite.classList.add('move');
+  }, 600);
+  setTimeout(() => {
+    imageContainer.classList.add('move');
+  }, 1100);
+
+  guestButton.style.transform = 'scale(1)';
+});
