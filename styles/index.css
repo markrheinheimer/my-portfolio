@@ -79,6 +79,35 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
+.gitcat {
+  position: relative;
+  height: 30px;
+  width: 30px;
+  top: 25px;
+  left: 40px;
+  transition: transform 0.2s;
+}
+
+.gitcat:hover {
+  transform: scale(0.95);
+}
+
+.linkedin {
+  position: relative;
+  height: 30px;
+  width: 30px;
+  top: 25px;
+  left: 80px;
+  transition: transform 0.2s;
+}
+
+.linkedin:hover {
+  transform: scale(0.95);
+}
+
+.linkedin:hover {
+}
+
 .show-nav {
   transform: translateX(200px);
 }
@@ -323,24 +352,44 @@ p {
   transform: translate(0);
 }
 
-@media (max-width: 850px) {
+@media (max-width: 920px) {
   .cta-btn-guest {
     visibility: hidden;
   }
+  .speech-container {
+    display: none;
+  }
+  .forkify-container a {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+  }
+  .relaxer-container a {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+  }
+  .favorite {
+    display: none;
+  }
+}
+
+@media (max-width: 635px) {
+  .forkify-container {
+    display: none;
+  }
+  .relaxer-container {
+    display: none;
+  }
+}
+
+@media (max-width: 550px) {
   .toggle {
     visibility: hidden;
   }
-  .cta-btn-guest {
-    visibility: hidden;
-  }
-
-  .body {
-    overflow: auto;
-  }
-  .project-img {
-    visibility: hidden;
-  }
-  p {
-    font-size: 19px;
+}
+@media (max-width: 470px) {
+  .speech-container {
+    display: none;
   }
 }

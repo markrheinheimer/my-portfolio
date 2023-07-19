@@ -129,6 +129,35 @@ h2 {
   animation: rotateIcon 1s infinite alternate;
 }
 
+.gitcat {
+  position: relative;
+  height: 30px;
+  width: 30px;
+  top: 25px;
+  left: 40px;
+  transition: transform 0.2s;
+}
+
+.gitcat:hover {
+  transform: scale(0.95);
+}
+
+.linkedin {
+  position: relative;
+  height: 30px;
+  width: 30px;
+  top: 25px;
+  left: 80px;
+  transition: transform 0.2s;
+}
+
+.linkedin:hover {
+  transform: scale(0.95);
+}
+
+.linkedin:hover {
+}
+
 @keyframes rotateIcon {
   0% {
     transform: rotate(-2deg);
@@ -157,25 +186,25 @@ h2 {
 .one {
   opacity: 0;
   transform: translateX(-600%);
-  transition: opacity 1.5s, transform 0.8s;
+  transition: opacity 1.7s, transform 0.8s;
 }
 
 .two {
   opacity: 0;
   transform: translateX(600%);
-  transition: opacity 1.5s, transform 1.1s;
+  transition: opacity 2.3s, transform 1.2s;
 }
 
 .three {
   opacity: 0;
   transform: translateX(-600%);
-  transition: opacity 1.5s, transform 1.5s;
+  transition: opacity 2.8s, transform 1.6s;
 }
 
 .four {
   opacity: 0;
   transform: translateX(600%);
-  transition: opacity 1.5s, transform 1.9s;
+  transition: opacity 3.2s, transform 2s;
 }
 
 .move {

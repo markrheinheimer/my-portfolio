@@ -235,9 +235,41 @@ h2 {
   opacity: 1;
 }
 
+.gitcat {
+  position: relative;
+  height: 30px;
+  width: 30px;
+  top: 25px;
+  left: 40px;
+  transition: transform 0.2s;
+}
+
+.gitcat:hover {
+  transform: scale(0.95);
+}
+
+.linkedin {
+  position: relative;
+  height: 30px;
+  width: 30px;
+  top: 25px;
+  left: 80px;
+  transition: transform 0.2s;
+}
+
+.linkedin:hover {
+  transform: scale(0.95);
+}
+
+.linkedin:hover {
+}
+
 @media (max-width: 1080px) {
   .project-img1 {
     justify-content: center;
+  }
+  body {
+    overflow: auto;
   }
 }
 
