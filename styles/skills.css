@@ -144,7 +144,7 @@ h2 {
   align-items: center;
   justify-content: center;
   max-width: 65%;
-  font-size: 25px;
+  font-size: 26px;
   margin-left: 17%;
 }
 
@@ -172,4 +172,15 @@ h2 {
 .drop {
   transform: translateY(0);
   opacity: 1;
+}
+
+@media (max-width: 850px) {
+  .container {
+    font-size: 21px;
+  }
+}
+@media (max-width: 530px) {
+  button {
+    visibility: hidden;
+  }
 }

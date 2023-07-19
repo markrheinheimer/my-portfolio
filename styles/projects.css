@@ -176,8 +176,6 @@ h2 {
   margin-bottom: 50px;
 }
 
-a {
-}
 .project-img1 a {
   display: flex;
   flex-direction: column;
@@ -199,8 +197,10 @@ a {
   border: 1px solid;
   border-color: lightgray;
   transition: transform 0.3s ease;
-  margin-bottom: 8px;
+  margin-bottom: 5px;
   margin-top: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .project-img1 img:hover {
@@ -233,4 +233,16 @@ a {
 .move {
   transform: scale(1);
   opacity: 1;
+}
+
+@media (max-width: 1080px) {
+  .project-img1 {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 530px) {
+  button {
+    visibility: hidden;
+  }
 }

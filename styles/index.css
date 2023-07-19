@@ -322,3 +322,25 @@ p {
 #toggle.togglemove {
   transform: translate(0);
 }
+
+@media (max-width: 850px) {
+  .cta-btn-guest {
+    visibility: hidden;
+  }
+  .toggle {
+    visibility: hidden;
+  }
+  .cta-btn-guest {
+    visibility: hidden;
+  }
+
+  .body {
+    overflow: auto;
+  }
+  .project-img {
+    visibility: hidden;
+  }
+  p {
+    font-size: 19px;
+  }
+}

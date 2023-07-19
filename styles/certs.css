@@ -210,3 +210,9 @@ h2 {
 .toggle {
   transform: translateX(0);
 }
+
+@media (max-width: 530px) {
+  button {
+    visibility: hidden;
+  }
+}
