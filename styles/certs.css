@@ -155,9 +155,6 @@ h2 {
   transform: scale(0.95);
 }
 
-.linkedin:hover {
-}
-
 @keyframes rotateIcon {
   0% {
     transform: rotate(-2deg);

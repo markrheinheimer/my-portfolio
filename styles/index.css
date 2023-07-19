@@ -105,9 +105,6 @@ nav ul li a:hover {
   transform: scale(0.95);
 }
 
-.linkedin:hover {
-}
-
 .show-nav {
   transform: translateX(200px);
 }

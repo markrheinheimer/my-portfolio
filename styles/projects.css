@@ -261,9 +261,6 @@ h2 {
   transform: scale(0.95);
 }
 
-.linkedin:hover {
-}
-
 @media (max-width: 1080px) {
   .project-img1 {
     justify-content: center;
