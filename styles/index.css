@@ -120,8 +120,6 @@ nav ul li a:hover {
   color: #fff;
   padding: 10px;
   border-radius: 5px;
-  /* transform: translate(-100px, 100px);
-  transition: 2s; */
 }
 
 .toggle:hover {
@@ -199,6 +197,10 @@ nav ul li a:hover {
 
 .moveheader {
   transform: translateX(0);
+}
+
+#message {
+  margin-bottom: 9px;
 }
 
 button,

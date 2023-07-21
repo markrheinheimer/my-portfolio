@@ -77,34 +77,31 @@ submit.addEventListener('click', (e) => {
   let messageField = modalForm.message.value;
 
   if (nameField === '') {
-    e.preventDefault();
     formName.style.border = '2px solid';
     formName.style.borderColor = '#a91010';
     alert('Please enter a name');
   } else {
-    formName.style.border = '1px solid';
+    formName.style.border = '2px solid';
     formName.style.borderColor = 'black';
     templateParams.name = nameField;
   }
 
   if (emailField === '') {
-    e.preventDefault();
     formEmail.style.border = '2px solid';
     formEmail.style.borderColor = '#a91010';
     alert('Please enter an email address');
   } else {
-    formEmail.style.border = '1px solid';
+    formEmail.style.border = '2px solid';
     formEmail.style.borderColor = 'black';
     templateParams.email = emailField;
   }
 
   if (messageField === '') {
-    e.preventDefault();
     formMessage.style.border = '2px solid';
     formMessage.style.borderColor = '#a91010';
     alert('Please enter a message');
   } else {
-    formMessage.style.border = '1px solid';
+    formMessage.style.border = '2px solid';
     formMessage.style.borderColor = 'black';
     templateParams.message = messageField;
   }
@@ -118,6 +115,8 @@ submit.addEventListener('click', (e) => {
         console.log('FAILED...', error);
       }
     );
-    modal.classList.remove('show-modal');
+    setTimeout(() => {
+      location.reload();
+    }, 600);
   }
 });
