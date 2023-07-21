@@ -15,6 +15,14 @@
     <link rel="stylesheet" href="./styles/index.css" />
     <link rel="stylesheet" href="./styles/modal.css" />
     <script src="./js/script.js" defer></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("h6RwXXwQK7Q3wbZ5p");
+   })();
+</script>
     <title>Mark Rheinheimer Portfolio</title>
   </head>
   <body>
@@ -133,7 +141,7 @@
             </div>
 
             <div>
-              <label for="Message">Message</label>
+              <label for="message">Message</label>
               <input
                 type="text"
                 id="message"

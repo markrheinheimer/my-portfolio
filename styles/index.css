@@ -296,6 +296,7 @@ p {
   text-decoration: underline;
   border: 1px solid;
   border-color: lightgray;
+  color: #a91010;
 }
 
 .project-img img {

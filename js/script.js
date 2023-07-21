@@ -5,8 +5,10 @@ const submit = document.getElementById('submit');
 const mrtitle = document.querySelector('.mrtitle');
 const mricon = document.querySelector('.mr-icon');
 const toggle = document.getElementById('toggle');
-
-// Toggle nav
+const modalForm = document.querySelector('.modal-form');
+const formName = document.getElementById('name');
+const formEmail = document.getElementById('email');
+const formMessage = document.getElementById('message');
 
 // Show modal
 open.addEventListener('click', () => modal.classList.add('show-modal'));
@@ -18,11 +20,6 @@ close.addEventListener('click', () => modal.classList.remove('show-modal'));
 window.addEventListener('click', (e) =>
   e.target === modal ? modal.classList.remove('show-modal') : false
 );
-
-submit.addEventListener('click', () => {
-  e.preventdefault();
-  console.log('hello');
-});
 
 document.addEventListener('DOMContentLoaded', () => {
   const professional = document.getElementById('professional');
@@ -62,6 +59,65 @@ document.addEventListener('DOMContentLoaded', () => {
   }, 2150);
 });
 
+// Toggle nav
 toggle.addEventListener('click', () => {
   document.body.classList.toggle('show-nav');
+});
+
+let templateParams = {
+  name: 'John Smith',
+  email: 'johnny@email.com',
+  message: 'How about them apples!!',
+};
+
+submit.addEventListener('click', (e) => {
+  e.preventDefault();
+  let nameField = modalForm.name.value;
+  let emailField = modalForm.email.value;
+  let messageField = modalForm.message.value;
+
+  if (nameField === '') {
+    e.preventDefault();
+    formName.style.border = '2px solid';
+    formName.style.borderColor = '#a91010';
+    alert('Please enter a name');
+  } else {
+    formName.style.border = '1px solid';
+    formName.style.borderColor = 'black';
+    templateParams.name = nameField;
+  }
+
+  if (emailField === '') {
+    e.preventDefault();
+    formEmail.style.border = '2px solid';
+    formEmail.style.borderColor = '#a91010';
+    alert('Please enter an email address');
+  } else {
+    formEmail.style.border = '1px solid';
+    formEmail.style.borderColor = 'black';
+    templateParams.email = emailField;
+  }
+
+  if (messageField === '') {
+    e.preventDefault();
+    formMessage.style.border = '2px solid';
+    formMessage.style.borderColor = '#a91010';
+    alert('Please enter a message');
+  } else {
+    formMessage.style.border = '1px solid';
+    formMessage.style.borderColor = 'black';
+    templateParams.message = messageField;
+  }
+
+  if (nameField && emailField && messageField) {
+    emailjs.send('default_service', 'template_jl59q1i', templateParams).then(
+      function (response) {
+        console.log('SUCCESS!', response.status, response.text);
+      },
+      function (error) {
+        console.log('FAILED...', error);
+      }
+    );
+    modal.classList.remove('show-modal');
+  }
 });
