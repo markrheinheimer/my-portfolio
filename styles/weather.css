@@ -32,7 +32,7 @@ h2.city-state {
   border-radius: 14px;
   padding-bottom: 10px;
   box-shadow: 1px 1px 3px rgb(120, 120, 255);
-  animation: changeBackground 3s linear forwards infinite alternate;
+  animation: changeBackground 2s linear forwards infinite alternate;
 }
 
 @keyframes changeBackground {
