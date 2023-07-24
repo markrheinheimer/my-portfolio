@@ -76,4 +76,6 @@ weather.addEventListener('submit', (e) => {
       cityState.innerText = '';
     });
   }
+
+  getWeatherData();
 });
