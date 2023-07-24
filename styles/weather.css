@@ -14,9 +14,15 @@ h2.city-state {
 }
 
 .app-move {
+  filter: blur(100px);
+  transition: filter 1.3s ease;
   position: absolute;
   top: 13px;
   right: 15px;
+}
+
+.blur-remove {
+  filter: blur(0px);
 }
 
 .app {

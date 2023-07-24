@@ -2,13 +2,14 @@ const close = document.getElementById('close');
 const open = document.getElementById('open');
 const modal = document.getElementById('modal');
 const submit = document.getElementById('submit');
-const mrtitle = document.querySelector('.mrtitle');
-const mricon = document.querySelector('.mr-icon');
 const toggle = document.getElementById('toggle');
-const modalForm = document.querySelector('.modal-form');
 const formName = document.getElementById('name');
 const formEmail = document.getElementById('email');
 const formMessage = document.getElementById('message');
+const mrtitle = document.querySelector('.mrtitle');
+const mricon = document.querySelector('.mr-icon');
+const modalForm = document.querySelector('.modal-form');
+const weatherApp = document.querySelector('.app-move');
 
 // Show modal
 open.addEventListener('click', () => modal.classList.add('show-modal'));
@@ -57,11 +58,15 @@ document.addEventListener('DOMContentLoaded', () => {
   setTimeout(() => {
     toggle.classList.add('togglemove');
   }, 2150);
+  setTimeout(() => {
+    weatherApp.classList.add('blur-remove');
+  }, 2850);
 });
 
 // Toggle nav
 toggle.addEventListener('click', () => {
   document.body.classList.toggle('show-nav');
+  toggle.classList.toggle('clicked');
 });
 
 let templateParams = {
