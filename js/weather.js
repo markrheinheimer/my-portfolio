@@ -69,7 +69,6 @@ weather.addEventListener('submit', (e) => {
         </div>`;
 
     const close = document.getElementById('close');
-    console.log(close);
 
     close.addEventListener('click', () => {
       weatherDiv.innerHTML = '';
@@ -77,6 +76,4 @@ weather.addEventListener('submit', (e) => {
       cityState.innerText = '';
     });
   }
-
-  getWeatherData();
 });
