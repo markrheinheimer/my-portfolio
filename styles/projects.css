@@ -15,10 +15,10 @@ body {
   font-family: 'Lato', 'Arial';
   margin: 0;
   background: linear-gradient(
-    90deg,
-    rgb(184, 184, 184),
+    135deg,
+    rgb(198, 198, 198),
     rgb(238, 238, 238),
-    rgb(184, 184, 184)
+    rgb(170, 170, 170)
   );
   transition: transform 0.6s ease;
   height: 100vh;
@@ -97,7 +97,7 @@ h2 {
   height: 45px;
   color: #fff;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 7px;
 }
 
 .toggle:hover {
