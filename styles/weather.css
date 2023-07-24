@@ -32,6 +32,16 @@ h2.city-state {
   border-radius: 14px;
   padding-bottom: 10px;
   box-shadow: 1px 1px 3px rgb(120, 120, 255);
+  animation: changeBackground 3s linear forwards infinite alternate;
+}
+
+@keyframes changeBackground {
+  from {
+    background-color: rgb(181, 237, 255);
+  }
+  to {
+    background-color: rgb(226, 249, 255);
+  }
 }
 
 .city-zipcode {

@@ -356,12 +356,12 @@ p {
   .app-move {
     display: none;
   }
-}
-
-@media (max-width: 920px) {
   .cta-btn-guest {
     visibility: hidden;
   }
+}
+
+@media (max-width: 920px) {
   .speech-container {
     display: none;
   }
