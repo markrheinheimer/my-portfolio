@@ -14,7 +14,9 @@
     />
     <link rel="stylesheet" href="./styles/index.css" />
     <link rel="stylesheet" href="./styles/modal.css" />
+    <link rel="stylesheet" href="./styles/weather.css" />
     <script src="./js/script.js" defer></script>
+    <script src="./js/weather.js" defer></script>
     <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
 </script>
@@ -58,8 +60,34 @@
       </p>
 
       <button class="cta-btn-guest" id="open">Guest Book</button>
+      
+     <div class="app-move">
+      <div class="app">
+        <h1>WeatherWhiz</h1>
+        <div class="city-zipcode">
+          <form action="" class="weather">
+            <label for="cityField"></label>
+            <input
+              type="text"
+              min="10000"
+              max="99999"
+              id="cityField"
+              class="city-field"
+              placeholder="Enter City or Zipcode"
+            />
+            <button type="submit" class="submit-btn">GO</button>
+          </form>
+        </div>
+        <h2 class="city-state"></h2>
+
+        <div class="display-weather"></div>
+      </div>
+    </div>
+    
+
     </header>
 
+    
       
     <div class="container-background"></div>
     <div class="container">

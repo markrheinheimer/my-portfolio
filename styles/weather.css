@@ -1,0 +1,134 @@
+h1 {
+  position: absolute;
+  top: 0px;
+  left: 14px;
+  color: rgb(97, 6, 6);
+  text-shadow: 1px 1px 1px rgb(255, 116, 116);
+  margin-bottom: 7px;
+  margin-top: 3px;
+  font-size: 32px;
+}
+
+h2.city-state {
+  font-size: 18px;
+  color: black;
+}
+
+.app-move {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.app {
+  background-color: rgb(218, 246, 255);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 3px solid rgb(0, 50, 126);
+  width: 230px;
+  height: 60px;
+  border-radius: 14px;
+  padding-bottom: 10px;
+  box-shadow: 1px 1px 3px rgb(120, 120, 255);
+}
+
+.city-zipcode {
+  position: absolute;
+  color: rgb(27, 27, 27);
+  text-align: center;
+  left: 11px;
+  top: 43px;
+}
+
+.city-field {
+  text-align: center;
+  padding: 4px 0px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: 2px solid;
+  border-color: rgb(85, 85, 85);
+}
+
+.submit-btn {
+  margin-left: -8px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 4px 10px;
+  border: 2px solid;
+  border-color: rgb(85, 85, 85);
+  transition: transform 0.3s;
+  transform: scale(1);
+}
+
+.clicked {
+  transform: scale(0.95);
+}
+
+.submit-btn:hover {
+  cursor: pointer;
+}
+
+img {
+  height: 80px;
+  width: 80px;
+}
+
+.description-icon {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  width: 210px;
+  height: 90px;
+  left: 20px;
+  top: -100px;
+}
+
+.description {
+  position: absolute;
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  font-family: sans-serif;
+  color: black;
+}
+
+.description p {
+  margin: 2px;
+  font-size: 17px;
+}
+
+.icon {
+  position: absolute;
+  top: 12px;
+  right: 15px;
+}
+
+.fa-solid.fa-x {
+  position: absolute;
+  bottom: -1px;
+  right: 10px;
+  color: black;
+}
+
+.fa-solid.fa-x:hover {
+  cursor: pointer;
+}
+
+.display-weather {
+  position: absolute;
+  text-align: center;
+  top: 200px;
+  flex-direction: column;
+}
+
+.city-state {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-top: -8px;
+}
