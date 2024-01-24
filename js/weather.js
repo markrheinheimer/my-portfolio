@@ -1,6 +1,9 @@
+import config from './config.js';
+
 const weather = document.querySelector('.weather');
 const goButton = document.querySelector('.submit-btn');
 const displayWeather = document.querySelector('.display-weather');
+const apiKey = config.API_KEY;
 
 goButton.addEventListener('click', () => {
   goButton.classList.add('clicked');
@@ -14,8 +17,6 @@ weather.addEventListener('submit', (e) => {
   const city = cityField.value;
 
   async function getWeatherData() {
-    const apiKey = '919012c8a99a4419a6821434232207';
-
     try {
       const response = await fetch(
         `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}&aqi=no`
