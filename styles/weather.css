@@ -21,6 +21,17 @@ h2.city-state {
   right: 15px;
 }
 
+.move-weather {
+  transition: 0.6s ease;
+  top: 13px;
+  right: 15px; /* initial state */
+}
+
+.move-weather.move {
+  transition: 0.6s ease;
+  right: 215px; /* toggled state */
+}
+
 .blur-remove {
   filter: blur(0px);
 }

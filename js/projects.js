@@ -3,9 +3,9 @@ const img2 = document.querySelector('.img2');
 const img3 = document.querySelector('.img3');
 const img4 = document.querySelector('.img4');
 
-toggle.addEventListener('click', () =>
-  document.body.classList.toggle('show-nav')
-);
+toggle.addEventListener('click', () => {
+  document.body.classList.toggle('show-nav');
+});
 
 document.addEventListener(
   'DOMContentLoaded',

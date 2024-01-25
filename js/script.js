@@ -67,6 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
 toggle.addEventListener('click', () => {
   document.body.classList.toggle('show-nav');
   toggle.classList.toggle('clicked');
+  weatherApp.classList.toggle('move');
 });
 
 let templateParams = {
