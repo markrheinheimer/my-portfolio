@@ -24,12 +24,12 @@ h2.city-state {
 .move-weather {
   transition: 0.6s ease;
   top: 13px;
-  right: 15px; /* initial state */
+  right: 215px; /* initial state */
 }
 
 .move-weather.move {
   transition: 0.6s ease;
-  right: 215px; /* toggled state */
+  right: 15px; /* toggled state */
 }
 
 .blur-remove {

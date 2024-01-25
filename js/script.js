@@ -61,6 +61,9 @@ document.addEventListener('DOMContentLoaded', () => {
   setTimeout(() => {
     weatherApp.classList.add('blur-remove');
   }, 2850);
+  setTimeout(() => {
+    document.body.classList.toggle('show-nav');
+  }, 3500);
 });
 
 // Toggle nav
