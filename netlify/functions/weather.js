@@ -19,7 +19,7 @@ exports.handler = async function (event, context) {
     }
 
     const weatherData = await apiResponse.json();
-
+    f;
     // Extract relevant information from the API response
     const weatherInfo = {
       city: weatherData.location.name,
