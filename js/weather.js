@@ -1,9 +1,10 @@
-import config from './config.js';
+// import config from './config.js'; // For local development
+
+// const apiKey = config.API_KEY; // For local development
 
 const weather = document.querySelector('.weather');
 const goButton = document.querySelector('.submit-btn');
 const displayWeather = document.querySelector('.display-weather');
-const apiKey = config.API_KEY;
 
 goButton.addEventListener('click', () => {
   goButton.classList.add('clicked');
