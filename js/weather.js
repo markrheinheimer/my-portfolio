@@ -4,8 +4,6 @@
 
 // For deployment
 
-// const apiKey = process.env.apiKey;
-
 const weather = document.querySelector('.weather');
 const goButton = document.querySelector('.submit-btn');
 const displayWeather = document.querySelector('.display-weather');
