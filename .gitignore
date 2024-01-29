@@ -1,2 +1,4 @@
 # Ignore environmental variables file
 config.js
+# Local Netlify folder
+.netlify

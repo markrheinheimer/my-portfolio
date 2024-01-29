@@ -3,16 +3,7 @@
 // const apiKey = config.API_KEY;
 
 // For deployment
-exports.handler = async function (event, context) {
-  const apiKey = process.env.apiKey;
-
-  return {
-    statusCode: 200,
-    body: JSON.stringify({
-      message: `Value of MY_IMPORTANT_VARIABLE is ${apiKey}.`,
-    }),
-  };
-};
+const apiKey = process.env.apiKey;
 
 const weather = document.querySelector('.weather');
 const goButton = document.querySelector('.submit-btn');
