@@ -1,11 +1,22 @@
-// import config from './config.js'; // For local development
+// // For local development
+// import config from './config.js';
+// const apiKey = config.API_KEY;
 
-// const apiKey = config.API_KEY; // For local development
+// For deployment
+exports.handler = async function (event, context) {
+  const apiKey = process.env.apiKey;
+
+  return {
+    statusCode: 200,
+    body: JSON.stringify({
+      message: `Value of MY_IMPORTANT_VARIABLE is ${apiKey}.`,
+    }),
+  };
+};
 
 const weather = document.querySelector('.weather');
 const goButton = document.querySelector('.submit-btn');
 const displayWeather = document.querySelector('.display-weather');
-const apiKey = process.env.apiKey; // For deployment
 
 goButton.addEventListener('click', () => {
   goButton.classList.add('clicked');
