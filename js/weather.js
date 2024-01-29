@@ -3,7 +3,18 @@
 // const apiKey = config.API_KEY;
 
 // For deployment
-const apiKey = process.env.apiKey;
+exports.handler = async function (event, context) {
+  // Access the environment variable
+  const apiKey = process.env.API_KEY;
+
+  return {
+    statusCode: 200,
+    body: JSON.stringify({
+      message: `Value of API_KEY is ${apiKey}.`,
+    }),
+  };
+};
+// const apiKey = process.env.apiKey;
 
 const weather = document.querySelector('.weather');
 const goButton = document.querySelector('.submit-btn');
