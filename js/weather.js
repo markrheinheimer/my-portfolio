@@ -5,6 +5,7 @@
 const weather = document.querySelector('.weather');
 const goButton = document.querySelector('.submit-btn');
 const displayWeather = document.querySelector('.display-weather');
+const apiKey = process.env.apiKey; // For deployment
 
 goButton.addEventListener('click', () => {
   goButton.classList.add('clicked');
