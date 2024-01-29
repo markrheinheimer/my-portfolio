@@ -3,17 +3,7 @@
 // const apiKey = config.API_KEY;
 
 // For deployment
-exports.handler = async function (event, context) {
-  // Access the environment variable
-  const apiKey = process.env.API_KEY;
 
-  return {
-    statusCode: 200,
-    body: JSON.stringify({
-      message: `Value of API_KEY is ${apiKey}.`,
-    }),
-  };
-};
 // const apiKey = process.env.apiKey;
 
 const weather = document.querySelector('.weather');
@@ -27,34 +17,41 @@ goButton.addEventListener('click', () => {
   }, 200);
 });
 
-weather.addEventListener('submit', (e) => {
+weather.addEventListener('submit', async (e) => {
   e.preventDefault();
   const city = cityField.value;
 
-  async function getWeatherData() {
-    try {
-      const response = await fetch(
-        `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}&aqi=no`
+  try {
+    // Make a request to the Netlify function
+    const response = await fetch('/.netlify/functions/weather', {
+      method: 'POST',
+      body: JSON.stringify({ city }),
+    });
+
+    if (response.ok) {
+      // Parse the response from the serverless function
+      const dataFromServer = await response.json();
+
+      const weatherInfo = {
+        city: dataFromServer.location.name,
+        state: dataFromServer.location.region,
+        description: dataFromServer.current.condition.text,
+        temperature: Math.round(dataFromServer.current.temp_f),
+        humidity: dataFromServer.current.humidity,
+        icon: dataFromServer.current.condition.icon,
+      };
+
+      // Continue with handling the response as needed
+      displayWeatherInfo(weatherInfo);
+    } else {
+      console.log(
+        'Server response not okay:',
+        response.status,
+        response.statusText
       );
-      const data = await response.json();
-
-      if (response.status === 200) {
-        const weatherInfo = {
-          city: data.location.name,
-          state: data.location.region,
-          description: data.current.condition.text,
-          temperature: Math.round(data.current.temp_f),
-          humidity: data.current.humidity,
-          icon: data.current.condition.icon,
-        };
-
-        displayWeatherInfo(weatherInfo);
-      } else {
-        console.log('Weather API request failed:', data.message);
-      }
-    } catch (error) {
-      console.log('Error fetching weather data:', error);
     }
+  } catch (error) {
+    console.error('Error fetching weather data:', error);
   }
 
   function displayWeatherInfo(weatherInfo) {
