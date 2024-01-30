@@ -1,5 +1,4 @@
 {
-  "type": "module",
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
     "body-parser": "^1.20.2",
