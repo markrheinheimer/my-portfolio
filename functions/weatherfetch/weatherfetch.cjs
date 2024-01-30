@@ -5,9 +5,11 @@ const handler = async (event) => {
   try {
     // Access the environment variable
     const apiKey = process.env.apiKey;
+    console.log(apiKey);
 
     // Extract the city from the request body
     const { city } = JSON.parse(event.body);
+    console.log(city);
 
     // Make a request to the weather API
     const apiUrl = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}&aqi=no`;
@@ -20,6 +22,7 @@ const handler = async (event) => {
     }
 
     const weatherData = await apiResponse.json();
+    console.log(weatherData);
 
     return {
       statusCode: 200,
