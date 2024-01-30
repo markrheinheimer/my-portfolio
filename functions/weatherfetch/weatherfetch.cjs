@@ -1,6 +1,4 @@
 // functions/weatherfetch/weatherfetch.cjs
-const fetch = require('node-fetch');
-
 const handler = async (event) => {
   try {
     // Access the environment variable
@@ -11,6 +9,10 @@ const handler = async (event) => {
 
     // Make a request to the weather API
     const apiUrl = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}&aqi=no`;
+
+    // Dynamic import of node-fetch
+    const fetchModule = await import('node-fetch');
+    const fetch = fetchModule.default;
 
     // Use the fetch function from the 'node-fetch' module
     const apiResponse = await fetch(apiUrl);
