@@ -4,15 +4,10 @@ import fetch from 'node-fetch';
 const handler = async (event) => {
   try {
     // Access the environment variable
-    const apiKey = process.env.API_KEY;
-    console.log(apiKey);
-
-    // // Dynamically import node-fetch
-    // const fetch = require('node-fetch');
+    const apiKey = process.env.apiKey;
 
     // Extract the city from the request body
     const { city } = JSON.parse(event.body);
-    console.log(city);
 
     // Make a request to the weather API
     const apiUrl = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}&aqi=no`;
@@ -26,16 +21,9 @@ const handler = async (event) => {
 
     const weatherData = await apiResponse.json();
 
-    // Extract relevant information from the API response
-    const weatherInfo = {
-      city: weatherData.location.name,
-      temperature: Math.round(weatherData.current.temp_f),
-      condition: weatherData.current.condition.text,
-    };
-
     return {
       statusCode: 200,
-      body: JSON.stringify(weatherInfo),
+      body: JSON.stringify(weatherData),
     };
   } catch (error) {
     console.error('Error in weather function:', error);
