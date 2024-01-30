@@ -1,5 +1,5 @@
 // functions/weatherfetch/weatherfetch.cjs
-// functions/weatherfetch/weatherfetch.js
+
 const handler = async (event) => {
   try {
     // Access the environment variable
