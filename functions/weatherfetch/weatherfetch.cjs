@@ -1,19 +1,20 @@
 // Docs on event and context https://docs.netlify.com/functions/build/#code-your-function-2
-const fetch = require('node-fetch');
+// functions/weatherfetch/weatherfetch.cjs
 
 const handler = async (event) => {
   try {
     // Access the environment variable
     const apiKey = process.env.apiKey;
-    console.log(apiKey);
 
     // Extract the city from the request body
     const { city } = JSON.parse(event.body);
-    console.log(city);
 
     // Make a request to the weather API
     const apiUrl = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}&aqi=no`;
-    const apiResponse = await fetch(apiUrl);
+
+    // Dynamic import of node-fetch
+    const fetchModule = await import('node-fetch');
+    const apiResponse = await fetchModule.default(apiUrl);
 
     if (!apiResponse.ok) {
       throw new Error(
@@ -22,7 +23,6 @@ const handler = async (event) => {
     }
 
     const weatherData = await apiResponse.json();
-    console.log(weatherData);
 
     return {
       statusCode: 200,
