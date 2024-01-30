@@ -21,7 +21,7 @@ weather.addEventListener('submit', async (e) => {
 
   try {
     // Make a request to the Netlify function
-    const response = await fetch('../netlify/functions/weatherfetch', {
+    const response = await fetch('../functions/weatherfetch', {
       method: 'POST',
       body: JSON.stringify({ city }),
     });
